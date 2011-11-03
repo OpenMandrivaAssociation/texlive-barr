@@ -1,3 +1,9 @@
+# revision 23579
+# category Package
+# catalog-ctan /macros/generic/diagrams/barr
+# catalog-date 2011-06-19 14:02:49 +0200
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-barr
 Version:	20110619
 Release:	1
@@ -40,6 +46,7 @@ xypic bundle.
 %{_texmfdistdir}/tex/generic/barr/diagxy.tex
 %doc %{_texmfdistdir}/doc/generic/barr/diaxydoc.pdf
 %doc %{_texmfdistdir}/doc/generic/barr/diaxydoc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,3 +57,5 @@ xypic bundle.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
