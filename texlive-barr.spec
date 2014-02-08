@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-barr
 Version:	20110619
-Release:	2
+Release:	3
 Summary:	Diagram macros by Michael Barr
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/barr
