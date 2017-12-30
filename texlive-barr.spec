@@ -1,12 +1,6 @@
-# revision 23579
-# category Package
-# catalog-ctan /macros/generic/diagrams/barr
-# catalog-date 2011-06-19 14:02:49 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-barr
-Version:	20110619
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	Diagram macros by Michael Barr
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/barr
@@ -34,9 +28,8 @@ xypic bundle.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/generic/barr/diagxy.tex
-%doc %{_texmfdistdir}/doc/generic/barr/diaxydoc.pdf
-%doc %{_texmfdistdir}/doc/generic/barr/diaxydoc.tex
+%{_texmfdistdir}/tex/generic/barr
+%doc %{_texmfdistdir}/doc/generic/barr
 
 #-----------------------------------------------------------------------
 %prep
@@ -47,18 +40,3 @@ xypic bundle.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110619-2
-+ Revision: 749449
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110619-1
-+ Revision: 717883
-- texlive-barr
-- texlive-barr
-- texlive-barr
-- texlive-barr
-- texlive-barr
-
