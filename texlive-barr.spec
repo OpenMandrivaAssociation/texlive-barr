@@ -1,12 +1,12 @@
 Name:		texlive-barr
-Version:	20190228
+Version:	38479
 Release:	1
 Summary:	Diagram macros by Michael Barr
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/barr
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/barr.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/barr.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/barr.r38479.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/barr.doc.r38479.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -19,12 +19,12 @@ of an earlier (successful) package to use the facilities of the
 xypic bundle.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -33,7 +33,7 @@ xypic bundle.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
