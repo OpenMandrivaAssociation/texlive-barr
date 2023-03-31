@@ -1,6 +1,6 @@
 Name:		texlive-barr
 Version:	38479
-Release:	1
+Release:	2
 Summary:	Diagram macros by Michael Barr
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/barr
