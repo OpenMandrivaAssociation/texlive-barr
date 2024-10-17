@@ -3,7 +3,7 @@ Version:	38479
 Release:	2
 Summary:	Diagram macros by Michael Barr
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/diagrams/barr
+URL:		https://www.ctan.org/tex-archive/macros/generic/diagrams/barr
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/barr.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/barr.doc.r%{version}.tar.xz
